@@ -7,7 +7,7 @@
  */
 
 // :antialias=true:autohint=true
-static char font[] = "Fira Mono:size=12";
+static char font[] = "Fira Mono:size=10";
 static int borderpx = 2;
 
 /*
@@ -44,7 +44,7 @@ static unsigned int tripleclicktimeout = 600;
 static int allowaltscreen = 1;
 
 /* frames per second st should at maximum draw to the screen */
-static unsigned int xfps = 120;
+static unsigned int xfps = 144;
 static unsigned int actionfps = 30;
 
 /*
@@ -87,25 +87,25 @@ static unsigned int tabspaces = 8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
+	"#eee8d5",
+	"#dc322f",
+	"#8ffff0",
+	"#b58900",
+	"#268bd2",
+	"#d33682",
+	"#2aa198",
+	"#073642",
 
 	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
-
+  "#000A0A",
+  "#cb4b16",
+  "#ffffff",
+  "#839496",
+  "#657b83",
+  "#6c71c4",
+  "#586e75",
+  "#002b36",
+	
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
@@ -119,9 +119,9 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-static unsigned int defaultfg = 7;
-static unsigned int defaultbg = 258;
-static unsigned int defaultcs = 256;
+static unsigned int defaultfg = 12;
+static unsigned int defaultbg = 8;
+static unsigned int defaultcs = 14;
 static unsigned int defaultrcs = 257;
 
 /*
@@ -131,7 +131,7 @@ static unsigned int defaultrcs = 257;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 2;
+static unsigned int cursorshape = 4;
 
 /*
  * Default colour and shape of the mouse cursor
