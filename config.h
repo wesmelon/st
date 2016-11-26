@@ -8,7 +8,7 @@
 
 // :antialias=true:autohint=true
 static char font[] = "Fira Mono:size=10";
-static int borderpx = 2;
+static int borderpx = 0;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -51,12 +51,12 @@ static unsigned int actionfps = 30;
  * blinking timeout (set to 0 to disable blinking) for the terminal blinking
  * attribute.
  */
-static unsigned int blinktimeout = 800;
+static unsigned int blinktimeout = 500;
 
 /*
  * thickness of underline and bar cursors
  */
-static unsigned int cursorthickness = 2;
+static unsigned int cursorthickness = 1;
 
 /*
  * bell volume. It must be a value between -100 and 100. Use 0 for disabling
@@ -87,7 +87,7 @@ static unsigned int tabspaces = 8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"#eee8d5",
+	"#000000",
 	"#dc322f",
 	"#8ffff0",
 	"#b58900",
@@ -97,13 +97,13 @@ static const char *colorname[] = {
 	"#073642",
 
 	/* 8 bright colors */
-  "#000A0A",
+  "#262626",
   "#cb4b16",
   "#ffffff",
   "#839496",
-  "#657b83",
+  "#eafaf7",
   "#6c71c4",
-  "#586e75",
+  "#ffffff",
   "#002b36",
 	
 	[255] = 0,
